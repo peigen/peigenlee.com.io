@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/peigen-favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/peigen-favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="6TT7Ez2uDg771fCydGJOSDybPisforkbSBbXLYn_AYw">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"peigen.info","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="我敢流浪也就不怕迷路疲惫危险">
+<meta property="og:type" content="website">
+<meta property="og:title" content="从技术的角度做管理">
+<meta property="og:url" content="http://peigen.info/index.html">
+<meta property="og:site_name" content="从技术的角度做管理">
+<meta property="og:description" content="我敢流浪也就不怕迷路疲惫危险">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Peigen Lee">
+<meta property="article:tag" content="Peigen, 培根, 李培跃, 易极付, 支付宝, Paycore">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://peigen.info/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>从技术的角度做管理 - Peigen、培根、李培跃 都是我</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">从技术的角度做管理</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Peigen、培根、李培跃 都是我</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">7</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">59</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404.html" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/peigen/peigen.info" class="github-corner" title="Fork Me on GitHub" aria-label="Fork Me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2021/04/29/2021/2021-04-29-Architect-Developer-Manager/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/29/2021/2021-04-29-Architect-Developer-Manager/" class="post-title-link" itemprop="url">经理？架构师？高工？</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-29 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-29T00:00:00+08:00">2021-04-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-01 13:49:29" itemprop="dateModified" datetime="2021-05-01T13:49:29+08:00">2021-05-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/uploads/%E6%9E%B6%E6%9E%84%E5%B8%88.jpg" alt="架构师"></p>
+<h1 id="经理？架构师？高工？"><a href="#经理？架构师？高工？" class="headerlink" title="经理？架构师？高工？"></a>经理？架构师？高工？</h1><p>新工作展开了一阵子，准确的说是一整个月了。这一个月的工作和生活也是可以总结总结的，算是重新出发，半截腰接手一个摊子，算不上烂，也好不到哪里去，该出的问题在出，不该出的问题暂时也防不住。</p>
+<p>公司是新公司，人还是老人，业务也还是老业务，也算是熟门熟路，也闪回了很多回忆。</p>
+<p>还是切入主题吧。</p>
+<p>有一天下班和老婆聊天的时候，突然发现我在同一个时间同时承担了三个角色的工作，而在这三个角色之间切换并没有什么障碍，当然有时候思考某些问题的时候不同的身份和角色直接会互相掐架；<br>比如：架构师和工程师角色转换的时候掐架，这时候就由经理的角色来劝架……场景也是非常有趣，一个人在办公室跺着步子（天人交战中），最后自己给自己说一句，走走走，吃顿好的去，哈哈哈哈哈哈哈哈哈，这大概就是人格分裂的一种征兆吧。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/29/2021/2021-04-29-Architect-Developer-Manager/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2021/04/11/2021/2021-04-10-interview/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/11/2021/2021-04-10-interview/" class="post-title-link" itemprop="url">记一次面试后给对方的邮件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-11 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-11T00:00:00+08:00">2021-04-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-01 09:37:02" itemprop="dateModified" datetime="2021-05-01T09:37:02+08:00">2021-05-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/uploads/%E8%AE%A4%E7%9F%A5%E5%B7%AE%E5%88%AB.jpeg" alt="一缕阳光"></p>
+<h1 id="记一次面试后给对方的邮件"><a href="#记一次面试后给对方的邮件" class="headerlink" title="记一次面试后给对方的邮件"></a>记一次面试后给对方的邮件</h1><p>里面有很多东西以代称表示，毕竟是真实的经历。</p>
+<h2 id="一、关于薪酬"><a href="#一、关于薪酬" class="headerlink" title="一、关于薪酬"></a>一、关于薪酬</h2><ul>
+<li>我希望，在这方面（月收入）不要低太多，按照昨天的聊法，我觉得可能会砍半，这对我的心理落差太大。如果是谈一个捆绑包，还请告知是怎么样构成的。</li>
+<li>另外，我盯的是CTO这样的岗位，绝非项目经理。</li>
+<li>我在想，一个如此重要的岗位只是项目经理这样的title也是有点奇怪，而且还称之为合伙人，就更是奇怪了。</li>
+</ul>
+<h2 id="二、关于工作内容"><a href="#二、关于工作内容" class="headerlink" title="二、关于工作内容"></a>二、关于工作内容</h2><p>我觉得这个工作是一个长期且持续的工作，而非只看眼前的进度，如果贵司招聘的岗位是眼前的的开发进度（去年6月30日谈，最终上线时间定在8月31日），我建议不要招管理者，而是招1-3名能力好一点的工程师，另外建军（内推我面试的朋友）就绝对有能力带领团队把事情做好，只是需要充分授权罢了，授权就需要责、权、利相对应的授权。</p>
+<p>就像，一个项目经理可以干好CTO的活儿么？不会的。但是CTO却可以干好项目经理的活儿，这个不可本末倒置。</p>
+<h2 id="三、关于团队"><a href="#三、关于团队" class="headerlink" title="三、关于团队"></a>三、关于团队</h2><p>如果以上两条可以解决，我会愿意花一点点时间（一周左右）对工作内容本身与团队的情况深入了解，再给出评估报告，如何改造团队，如何完成开发进度，如何改造基础技术等。</p>
+<h2 id="四、关于业务"><a href="#四、关于业务" class="headerlink" title="四、关于业务"></a>四、关于业务</h2><p>我确实没有做过生鲜类的业务，但是对于我来说见过的世面也不少，所谓触类旁通，这对我不是问题。多年的工作养成的职业素养就是快速学习。</p>
+<p>业务上，4个店烧掉6000W我还是比较震惊的。如果摸索出了模式还比较好理解。也许是走了些弯路。但是作为一个小店的店主，一定是烧不起这个钱的，我夫人曾与人一起经营过一个小水果店，不过5人以内，也是挣扎在生死线上，所以我们现在的模式是否能达到边际成本最大化，有待商榷。或者说目前从数据上还没表现出来，我更希望可以了解到，规划中是什么时候可以做到。下一步的目标又是什么。</p>
+<p>最后，我认为这些才是彼此之间的认知差别。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2020/09/04/2020/2020-9-4-sister/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/04/2020/2020-9-4-sister/" class="post-title-link" itemprop="url">妹妹出嫁了</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-04 00:00:00" itemprop="dateCreated datePublished" datetime="2020-09-04T00:00:00+08:00">2020-09-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-01 10:54:06" itemprop="dateModified" datetime="2021-05-01T10:54:06+08:00">2021-05-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/uploads/%E5%93%A5%E5%93%A5%E8%83%8C%E5%A6%B9%E5%A6%B9.jpg" alt="哥哥背妹妹"></p>
+<h1 id="妹妹要出嫁了"><a href="#妹妹要出嫁了" class="headerlink" title="妹妹要出嫁了"></a>妹妹要出嫁了</h1><p>突然在亲亲一家子群里看到了妹妹官宣，本应该恭喜祝福的我，却陷入了无尽的回忆漩涡……</p>
+<p>依稀还记得那时的我我还很小很小，应该是暑假的时候吧，我在奶奶家寄宿，小叔也还没嫁娶，没有搬出去，由于我的到来，导致小叔只能用两张板凳搭一个床板，那一定很不舒服吧。每天晚上搭床板，早上再撤掉，把床板和板凳藏到柜子里，也不是柜子，一块凹进去的墙壁外面弄了一个推拉门板，还记得那里面有好多乱七八糟的东西，而且与天花板同高，三面都有4层。</p>
+<p>还有一个印象，小叔很开朗，时常笑，每天早上都要烫头，有时候我甚至能闻到毛发烧焦了的味道；没错，就是那种让人想作呕的味道，哈哈哈。那时候是真的搞不明白为啥要这样，而且也不觉得好看，还是太小了，不懂事。不过小叔爱美是实锤了，不知道后来还有再烫头么。</p>
+<p>已记不清是哪个暑假了，小时候经常会去奶奶家寄宿，多了个阿姨带我出去玩，还给我买玩具、买好吃的，不过我这些都不喜欢，我喜欢打游戏啊，只记得两个人一路尬聊，我说我的游戏，你说你的事情，我听不懂你，你听不懂我，想想都好笑啊。</p>
+<p>只记得阿姨漂亮，阿姨后来变成了小婶，不过一直以来阿姨不像阿姨，更像是姐姐，还是经常“欺负”我的姐姐。再后来妹妹就出生了，就又多了个人欺负我。</p>
+<p>后来，我长大了，去奶奶家的机会少了，每年回去一次，妹妹也长大了，每次见面都要我背她，要么就锁喉……这大概是她们表达喜欢的方式吧。</p>
+<p align="right">写于照母山家中</p>
+<p align="right">2020.9.4</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2020/01/01/2020/2020-1-1-Review-and-Plan/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/01/2020/2020-1-1-Review-and-Plan/" class="post-title-link" itemprop="url">2019 Review & 2020 Plan</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-01T00:00:00+08:00">2020-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-10 19:14:05" itemprop="dateModified" datetime="2021-04-10T19:14:05+08:00">2021-04-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/uploads/%E4%B8%80%E7%BC%95%E9%98%B3%E5%85%89.jpeg" alt="一缕阳光"></p>
+<h1 id="谷底么"><a href="#谷底么" class="headerlink" title="谷底么"></a>谷底么</h1><p>今年突然发现写总结的朋友多起来了，看来大家的生活都出现了不一样的变化，挺好。</p>
+<h2 id="Review-2019"><a href="#Review-2019" class="headerlink" title="Review 2019"></a>Review 2019</h2><h3 id="工作篇"><a href="#工作篇" class="headerlink" title="工作篇"></a>工作篇</h3><p><strong>先Review2018的Plan吧：</strong></p>
+<blockquote>
+<p>这也许是几年来最简略的Plan吧，没Plan就是最简单的，也是少有的没Plan的年份吧，只是希望可以平平安安的度过本命年。</p>
+</blockquote>
+<p>突然发现我的2019居然是没有plan的一年，也是奇怪。而且对于期待居然就是平平安安，我的2019在工作上也还是算是平平安安吧。虽然本命年还没过完，也差不多了，应该不会有更坏的事情出现了吧。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/01/01/2020/2020-1-1-Review-and-Plan/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2019/08/02/2019/2019-8-2-Nezha/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/08/02/2019/2019-8-2-Nezha/" class="post-title-link" itemprop="url">《哪吒之魔童降世》有感</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2019-08-02T00:00:00+08:00">2019-08-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-10 19:14:05" itemprop="dateModified" datetime="2021-04-10T19:14:05+08:00">2021-04-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="http://pic.yupoo.com/peigen123_v/3f076b54/df165c09.jpeg" alt="页首图"></p>
+<p>也不知是年龄大了么，还是更多愁善感了，看了一部电影罢了，还是个动画片，就哭得唏哩哗啦，不得不说导演把我的心理拿得死死的。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/08/02/2019/2019-8-2-Nezha/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2019/05/08/2019/2019-5-8-Life-can-be-regretted-dont-leave-regret/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/05/08/2019/2019-5-8-Life-can-be-regretted-dont-leave-regret/" class="post-title-link" itemprop="url">人生可以后悔，别留遗憾</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-05-08 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-08T00:00:00+08:00">2019-05-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-01 10:48:17" itemprop="dateModified" datetime="2021-05-01T10:48:17+08:00">2021-05-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://pic.yupoo.com/peigen123_v/97f1e0ab/c559630f.jpeg" alt="页首图"></p>
+<p>昨日，和周姐叙旧，每次我们都会聊到究竟是否后悔来到重庆。我的答案一直是不后悔。</p>
+<p>毕竟人生的旅途过程中的风景才是自个的，终点不是……又或者没有终点……至少我现在还看不到终点……</p>
+<p>关于后悔的话题，今早看到了这么一句话，也算是我一直以来的座右铭吧—[人生可以后悔，别留遗憾]……</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/05/08/2019/2019-5-8-Life-can-be-regretted-dont-leave-regret/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2019/01/01/2019/2019-1-1-Review-and-Plan/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/01/01/2019/2019-1-1-Review-and-Plan/" class="post-title-link" itemprop="url">2018 Review & 2019 Plan</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2019-01-01T00:00:00+08:00">2019-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-10 19:14:05" itemprop="dateModified" datetime="2021-04-10T19:14:05+08:00">2021-04-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="http://pic.yupoo.com/peigen123_v/1bc9acf8/medium.jpg" alt="头号玩家"></p>
+<h1 id="一落千丈"><a href="#一落千丈" class="headerlink" title="一落千丈"></a>一落千丈</h1><p>今天看到尤长靖和锤科的新闻，促使我提前写下本文。</p>
+<h2 id="Review-2018"><a href="#Review-2018" class="headerlink" title="Review 2018"></a>Review 2018</h2><h3 id="工作篇"><a href="#工作篇" class="headerlink" title="工作篇"></a>工作篇</h3><p><strong>先Review2018的Plan吧：</strong></p>
+<ul>
+<li>在瑞骐复制易极付的成功，当然我还是希望兄弟们来帮帮忙滴</li>
+<li>团队管理：搭班子、带团队、定制度</li>
+<li>聚合支付以另一种形式继续下去，这个事儿在2-3年内有前途</li>
+</ul>
+<p>只能说在瑞骐，我是不成功的，毕竟经历的团队中Teamleader的反水，经历关键岗位没有backup的时候的关键人物离职，有真空期。</p>
+<p>团队建设了一半，勉强给自己打60分，由于公司的经营问题，本可以带出一只具备战斗力的团队，现在也只能作罢。</p>
+<p>聚合支付还在努力，继续努力……</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/01/01/2019/2019-1-1-Review-and-Plan/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2018/07/16/2018/2018-7-13-A-letter-to-myself-18-years-old/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/07/16/2018/2018-7-13-A-letter-to-myself-18-years-old/" class="post-title-link" itemprop="url">给18岁自己的一封信</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-07-16 00:00:00" itemprop="dateCreated datePublished" datetime="2018-07-16T00:00:00+08:00">2018-07-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-10 19:14:05" itemprop="dateModified" datetime="2021-04-10T19:14:05+08:00">2021-04-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="http://pic.yupoo.com/peigen123_v/115982b4/87342ead.png" alt="给十八岁的我"></p>
+<p>Hi，boy……延迟了好久总算动笔了，有那么些话要和你唠唠。</p>
+<p>18岁的你大概听不进这些东西吧……^_^</p>
+<p>朋友，你现在做的所有事情都好好做吧，认真做，几年后都会有收益，毛主席说过：这世上就怕认真二字。以后你还会听到『勇敢的人不问敌人有多少，只问敌人在哪里』、『怂人面前都是坎』这样的警示箴言。</p>
+<p>无论是友情、亲情、爱情，这些情感都是人生的经历，随心就好……想太多不如做一点，多和爹妈说说话，揉揉肩吧，都不容易，算是我拜托你的第一件事情吧……</p>
+<p>上完大学会和奶奶一起生活一段时间，好好珍惜，那是奶奶最后的时间……让奶奶在生命的最后时候是微笑着走，好吗……</p>
+<p>对于学习、工作付出再多也不为过，为了你那不切实际的梦想燃烧你的小宇宙吧，自我内心的满足才是真的，外界的声音请主动过滤。</p>
+<p>2008年北京奥运会年，切忌无论如何都要混到支付宝去，那是你认生第一个大台阶，不过也许你现在也不知道什么是支付宝。</p>
+<p>2012年去重庆吧，在那里有太多的人生的感悟，无论结果怎么样，有这么段经历挺好的。</p>
+<p>2018-07-13 写于成都 雄飞中心 </p>
+<p>这一年我36岁……正好翻倍了……</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2018/07/16/2018/2018-7-13-A-letter-to-myself-40-years-old/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/07/16/2018/2018-7-13-A-letter-to-myself-40-years-old/" class="post-title-link" itemprop="url">给40岁自己的一封信</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-07-16 00:00:00" itemprop="dateCreated datePublished" datetime="2018-07-16T00:00:00+08:00">2018-07-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-10 19:14:05" itemprop="dateModified" datetime="2021-04-10T19:14:05+08:00">2021-04-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="http://pic.yupoo.com/peigen123_v/18b42472/c89cd1f7.png" alt="给四十岁的你"></p>
+<p>Yo，刚给我的小弟弟【18岁】写了封信，就想到要给你也写点什么，对于你来说他大概都差着辈分了吧，也许你会有不一样的话语对他说吧。</p>
+<p>希望你不会觉得我是个傻子，也但愿你能收到我现在的经历，不会抹去我现在的记忆吧。</p>
+<p>咱爸、咱妈身子骨还硬朗吧……？痛风该已经不是事儿了吧，你该是120斤吧^_^</p>
+<p>去了圣西罗么？美国好玩不？地中海上的瓜子是不是洽洽呢？^_^</p>
+<p>买了房车了吧，中国美么……好想你给我分享分享你的经历啊……</p>
+<p>对你来说钱大概不是你的追求了吧，当初的理想都实现了么？</p>
+<p>你做的游戏好玩不？做老师的感觉如何呀？独立咨询师是不是更辛苦啦？</p>
+<p>对了，咱娃该上蒙台梭利了吧，哈哈哈，土豪……</p>
+<p>你有什么想对我说的呢？</p>
+<p>2018-07-13 写于成都 雄飞中心</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2018/06/17/2018/2018-6-17-Father's-Day/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/06/17/2018/2018-6-17-Father's-Day/" class="post-title-link" itemprop="url">Father & Brother</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-06-17 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-17T00:00:00+08:00">2018-06-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-10 19:14:05" itemprop="dateModified" datetime="2021-04-10T19:14:05+08:00">2021-04-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>受姬虎启发，写下此文：</p>
+<p>有好多人羡慕我们家庭，羡慕我和您，我们是父子，却更像是兄弟，一份忘年兄弟情。我们彼此心中了解，这样的关系得来不易，我努力维持……</p>
+<p>在记忆中我们单独吃饭的次数好少，记得前几年您带我找遍全阎良确找不到胡辣汤，最后吃了您认为好吃的泡馍，还是优质的，哈哈……</p>
+<p>印象中最深刻的事，小时候我是无比幸福的孩子，总是在小朋友里面特别有面子，您给了我无数的第一：第一个拥有游戏机（任天堂红白机）、第一个有录音机、第一个有录像机、第一个接触电脑，并在小学三年级之前学会盲打，让我人生的初段一直领先于人前。</p>
+<p>每年的春节我们都要回奶奶家，所以会有每年一次的出远门，那是我小时候最开心的3个小时吧，我把我这一年看过的书，发生的有趣的事情都跟您分享，把我的想法，对未来的渴望都跟您讲，到现在，也还算没有食言吧。</p>
+<p>从小我就走了一条有别于全家人的成长路径，您和梅梅的支持是我这一路上最大的藉慰，直到如今，依然激励着我以往如前。</p>
+<p>我也还记得您N年前答应梅梅的冰棒和答应我的笔记本电脑，不知道冰棒还还的上不，笔记本电脑您是还不上了……</p>
+<p>还记得我弄坏了家里的照相机，致使家里才没出现过类似相机一样的物体，还害得你们大吵一架，锅是我的，以后都我来背吧，辛苦啦……</p>
+<p>还记得高考那年，您带着我去找你的朋友走后门，虽然最后也没走成；那是我第一次感觉到您的无能为力，也恨自己的不努力，不就是考书本嘛，如再活一遍决不让请您有那么一个人生污点……</p>
+<p>上学时的任性，您对我选择了包容，这是多么大的气量啊，也正是从那个时候人生的坎坷不断，我才真正明白我的人生到底该如何过……</p>
+<p>但愿不会让您觉得选错了吧……</p>
+<p>我们的人生还在继续，我们的故事也还在继续……</p>
+<p>记得了……还欠我笔记本电脑一台，这辈子还不了，还有下辈子……</p>
+<p>2018-6-17 写于 成都</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Peigen Lee"
+      src="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+  <p class="site-author-name" itemprop="name">Peigen Lee</p>
+  <div class="site-description" itemprop="description">我敢流浪也就不怕迷路疲惫危险</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">59</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/peigen" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;peigen" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:peigen123@gmail.com" title="E-Mail → mailto:peigen123@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/peigen" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;peigen" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/peigen" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;peigen" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>微博</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/peigen.lee" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;peigen.lee" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/peigenlpy" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;peigenlpy" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://bohr.me/" title="http:&#x2F;&#x2F;bohr.me&#x2F;" rel="noopener" target="_blank">波神</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2011 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Peigen Lee</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

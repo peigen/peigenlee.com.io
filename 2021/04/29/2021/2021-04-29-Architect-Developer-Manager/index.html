@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/peigen-favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/peigen-favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="6TT7Ez2uDg771fCydGJOSDybPisforkbSBbXLYn_AYw">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"peigen.info","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="经理？架构师？高工？新工作展开了一阵子，准确的说是一整个月了。这一个月的工作和生活也是可以总结总结的，算是重新出发，半截腰接手一个摊子，算不上烂，也好不到哪里去，该出的问题在出，不该出的问题暂时也防不住。 公司是新公司，人还是老人，业务也还是老业务，也算是熟门熟路，也闪回了很多回忆。 还是切入主题吧。 有一天下班和老婆聊天的时候，突然发现我在同一个时间同时承担了三个角色的工作，而在这三个角色之间">
+<meta property="og:type" content="article">
+<meta property="og:title" content="经理？架构师？高工？">
+<meta property="og:url" content="http://peigen.info/2021/04/29/2021/2021-04-29-Architect-Developer-Manager/index.html">
+<meta property="og:site_name" content="从技术的角度做管理">
+<meta property="og:description" content="经理？架构师？高工？新工作展开了一阵子，准确的说是一整个月了。这一个月的工作和生活也是可以总结总结的，算是重新出发，半截腰接手一个摊子，算不上烂，也好不到哪里去，该出的问题在出，不该出的问题暂时也防不住。 公司是新公司，人还是老人，业务也还是老业务，也算是熟门熟路，也闪回了很多回忆。 还是切入主题吧。 有一天下班和老婆聊天的时候，突然发现我在同一个时间同时承担了三个角色的工作，而在这三个角色之间">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://peigen.info/uploads/%E6%9E%B6%E6%9E%84%E5%B8%88.jpg">
+<meta property="article:published_time" content="2021-04-28T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-01T05:49:29.307Z">
+<meta property="article:author" content="Peigen Lee">
+<meta property="article:tag" content="管理">
+<meta property="article:tag" content="感悟">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://peigen.info/uploads/%E6%9E%B6%E6%9E%84%E5%B8%88.jpg">
+
+<link rel="canonical" href="http://peigen.info/2021/04/29/2021/2021-04-29-Architect-Developer-Manager/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>经理？架构师？高工？ | 从技术的角度做管理</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">从技术的角度做管理</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Peigen、培根、李培跃 都是我</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">7</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">59</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404.html" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/peigen/peigen.info" class="github-corner" title="Fork Me on GitHub" aria-label="Fork Me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://peigen.info/2021/04/29/2021/2021-04-29-Architect-Developer-Manager/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Peigen Lee">
+      <meta itemprop="description" content="我敢流浪也就不怕迷路疲惫危险">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从技术的角度做管理">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          经理？架构师？高工？
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-29 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-29T00:00:00+08:00">2021-04-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-01 13:49:29" itemprop="dateModified" datetime="2021-05-01T13:49:29+08:00">2021-05-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="/uploads/%E6%9E%B6%E6%9E%84%E5%B8%88.jpg" alt="架构师"></p>
+<h1 id="经理？架构师？高工？"><a href="#经理？架构师？高工？" class="headerlink" title="经理？架构师？高工？"></a>经理？架构师？高工？</h1><p>新工作展开了一阵子，准确的说是一整个月了。这一个月的工作和生活也是可以总结总结的，算是重新出发，半截腰接手一个摊子，算不上烂，也好不到哪里去，该出的问题在出，不该出的问题暂时也防不住。</p>
+<p>公司是新公司，人还是老人，业务也还是老业务，也算是熟门熟路，也闪回了很多回忆。</p>
+<p>还是切入主题吧。</p>
+<p>有一天下班和老婆聊天的时候，突然发现我在同一个时间同时承担了三个角色的工作，而在这三个角色之间切换并没有什么障碍，当然有时候思考某些问题的时候不同的身份和角色直接会互相掐架；<br>比如：架构师和工程师角色转换的时候掐架，这时候就由经理的角色来劝架……场景也是非常有趣，一个人在办公室跺着步子（天人交战中），最后自己给自己说一句，走走走，吃顿好的去，哈哈哈哈哈哈哈哈哈，这大概就是人格分裂的一种征兆吧。</p>
+<span id="more"></span>
+
+<p>这一整月下来，对于架构的理解自认为上升了一个新的层次，也得益于最近两年的所思所想，在这一刻集中迸发出来，挡都挡不住，^_^</p>
+<p><strong>首先</strong>，关于成本，不仅仅是财务成本，还有更多的关于开发过程中的成本，测试过程中的成本，部署过程的成本，人员填坑和挖坑的能力评估，这些都不仅仅是钱能解决的；一如小时候的习题，开水管蓄水的管子开着，下水的漏水管开着，不同的流速，何时能把水池中的水都放掉？其实永远放不掉，不过是我下水的能力超过的灌水的能力罢了；就像是不那么高级的工程师在工程里挖各种坑（拉各种屎），直到有一天自己受不了了，怕怕屁股走人，老子不陪你们玩了，换下一家工资涨一点，但继续往别人的系统里拉屎。这个时候不同的角色会有不同的反应和处理手段：</p>
+<ul>
+<li>“高级”工程师<ul>
+<li>频繁检查，时常做code review，纠正错误，维护代码，直至给领导打“小报告”</li>
+</ul>
+</li>
+<li>架构师<ul>
+<li>制定详尽的手段控制代码不至于太乱，即便是垃圾一样的代码，影响面更小，把损失控制在可控范围内，更考验架构师的设计理念如何通过系统的设计去实现、去控制</li>
+</ul>
+</li>
+<li>经理<ul>
+<li>制定专门针对此类问题的标准、制度，以更抽象的方式去约束，可以有正向的激励典型和负向的惩罚措施匹配使用</li>
+</ul>
+</li>
+</ul>
+<p><strong>其次</strong>，关于软件架构的设计，不太像是一个工程化的产物，我现在更愿意将其定义为一个哲学化的社会实践活动。这里面有工程化的导向，有组织的形态的考量，有管理手段的达成：</p>
+<ul>
+<li>工程化的导向<ul>
+<li>这里不用说太多，无非是如何多快好省的解决业务问题</li>
+<li>如何在现有条件下考虑非功能性需求，为可能看得到的未来打下基础，切勿冒进，过度设计，别在未来没到之前就被技术拖死了</li>
+</ul>
+</li>
+<li>组织形态的考量<ul>
+<li>包括绩效考核，各岗位之间的融合、协作</li>
+<li>如：前后端分离是如何分离，你中有我、我中有你、老死不相往来？接口的定义哪一方为主导？</li>
+<li>如：测试，集成测试，模块间的调用，是模块的负责人写用例，提供数据准备么？Mock测试，是调用方提供期望，由服务提供方提供实现么？</li>
+</ul>
+</li>
+<li>管理手段的达成<ul>
+<li>管理简单的说：防住不该犯的错，鼓励期望的主动、创新之类的倾向性；透过被管理者达成管理者的绩效，什么样的绩效是好的呢，不就是挤的是奶，吃的是草的大无畏么，不就是3.75（阿里巴巴的评价标准）的超出期望么</li>
+<li>人员能力永远都是参差不齐，人员性格永远百花齐放，但是人员的合适和不合适却是2/8原则，即有20%的同学一定是整个团队中拔尖的，另外80%的同学也许是还没开窍吧。<ul>
+<li>从人口的比例来看，如果管理的动作可以充分提高80%的同学的效率（包括质量和速度），对于经理的绩效达成是有明显的作用的，而且这80%的同学多数时候仅仅是不得要领罢了，对于提高是相对容易的。</li>
+<li>而另外的20%的同学自己就能很好的找到提升自己的方法，放任自流即可、资源倾斜就好，从80分提高到90分相对容易，可是从90分网上每提高一份也许都要付出成倍的努力</li>
+<li>经理们，你们会怎么选呢？</li>
+</ul>
+</li>
+<li>即，透过软件架构的方式帮助经理更易于管理团队，为每个人找到定位，且永远为每个人开放上升通道，这个时候仅需要贯彻，No BB，Show me your code.</li>
+<li>例如：定义好系统中每一次的接口调用，每一条必须收集的日志，定义好每个需要严格校验的入参，用工程抽象的方式做集中管控；同时为每一位开发人员在遵照规范执行提升工作效率（早下班），提升质量（少bug），切实感受到遵循规则的价值。</li>
+</ul>
+</li>
+</ul>
+<p><strong>再次</strong>，我在软件领域见过太多的极端主义者，对自己足够狠，对其他人就更加的狠；比如：曾经一个老同事在为了提高效率，逼迫自己完全不用鼠标，这样就可以省去手移动到鼠标的过程……这大概是鼠标这玩意被发明出来被黑的最惨的一次吧。当然，我自己也在他的胁迫之下，尝试了一段时间，却是可以提高效率，但是对于我来说我是一个“懒人”，很多的时候我会逼迫自己去“偷懒”，用于尝试不同的情况下会有怎样不同的效果，也许有不同的思考也未可知。</p>
+<p><strong>最后</strong>，这一个月里干了不少的“坏事”和“错事”，当然都是在其他人眼中的；作为这三个角色的承载者，当对某人、某事得出结论的时候就要勇于去选择，用当前看似成本高、风险高的方式去处理，因为我深知问题不会随着时间的推移消失不见，只会视而不见；那不是我，至少不是现在的我，小团队的管理有小团队管理的方法，不需要团队的负责人做一个好人，这个时候就算是霸道点、独裁点，也没什么坏处，如何能兼顾当然就更好啦。</p>
+<p>这一个月放掉了俩个人，选了一个能力更好的，差不多用两个人的薪水换一个人；直接杀入一线写代码、改代码，从细节入手，这个时候要了解一个人、一个系统要深入到毛细血管才能真正了解，否则很难全面。这时候又可以凡尔赛一下了，基本鄙人顶着38周岁的“高龄”，依然可以深入一线，依然可以效率高过25-6岁的小伙子，花了一点点时间更新了武器库的版本，且透过不同的手段更丰富了我的武器库。</p>
+<p>总结来说解决技术问题未必要用技术手段。</p>
+<p><strong>最最后</strong>，职业生涯至今我一直以来对待工作的态度都是我热爱、我奋斗、我有所得，身边却一直有另一种声音在萦绕：你不过是有的选，很多人是没得选，有家庭的问题啦，出身的问题啦，各种各样的问题。</p>
+<p>我必须承认，我运气特别好，得益于我的家庭教育，我母亲是我见过最勤劳的人（无论男女），我父亲算是中国第一代的程序员（55年生人，编程主要以汇编为主），在我很小的时候就接触到计算机，从小就捣鼓各种电子产品（以搞破坏为主）。可是我身边的朋友，邻居的小孩大多我和一样啊，但我们走的路却不同啊。我身边的同事也和我同样薪水啊，但我们选择不同啊。所以，我至始至终都认为我是因为热爱而选择了工作，这就是我愿意为之付出一切的事物啊，所以我从来不信什么出身，我只信我投入比别人多，我并不聪明，我不过是比其他人付出更多的努力，而且我很持久，这么多年持续努力，我不过是得到了我该得到的；也正是因为这样也会有人利用这一点，“欺负欺负我”，不过我热爱我的工作，我不觉得是欺负罢了。</p>
+<p>回身一看居然写了这么多，也算是有些话不吐不快吧，各位看官辛苦了~~~</p>
+<p align="right"> 写于照母山家中</p>
+<p align="right"> 2021.05.01</p>
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/uploads/wechat-pay-qcode.jpeg" alt="Peigen Lee 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/uploads/alipay-qcode.jpeg" alt="Peigen Lee 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/peigen">
+            <span class="icon">
+              <i class="twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/uploads/wechat-qcode.jpg">
+            <span class="icon">
+              <i class="wechat"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="mailto:peigen123@gmail.com">
+            <span class="icon">
+              <i class="envelope"></i>
+            </span>
+
+            <span class="label">E-Mail</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://weibo.com/peigen">
+            <span class="icon">
+              <i class="weibo"></i>
+            </span>
+
+            <span class="label">Weibo</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.facebook.com/peigen.lee">
+            <span class="icon">
+              <i class="facebook"></i>
+            </span>
+
+            <span class="label">Facebook</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://instagram.com/peigenlpy">
+            <span class="icon">
+              <i class="instagram"></i>
+            </span>
+
+            <span class="label">Instagram</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E7%AE%A1%E7%90%86/" rel="tag"><i class="fa fa-tag"></i> 管理</a>
+              <a href="/tags/%E6%84%9F%E6%82%9F/" rel="tag"><i class="fa fa-tag"></i> 感悟</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/11/2021/2021-04-10-interview/" rel="prev" title="记一次面试后给对方的邮件">
+      <i class="fa fa-chevron-left"></i> 记一次面试后给对方的邮件
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%8F%E7%90%86%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%EF%BC%9F%E9%AB%98%E5%B7%A5%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">经理？架构师？高工？</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Peigen Lee"
+      src="/images/%E6%83%85%E4%BE%A3%E5%A4%B4%E5%83%8F.jpg">
+  <p class="site-author-name" itemprop="name">Peigen Lee</p>
+  <div class="site-description" itemprop="description">我敢流浪也就不怕迷路疲惫危险</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">59</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/peigen" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;peigen" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:peigen123@gmail.com" title="E-Mail → mailto:peigen123@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/peigen" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;peigen" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/peigen" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;peigen" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>微博</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/peigen.lee" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;peigen.lee" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/peigenlpy" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;peigenlpy" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://bohr.me/" title="http:&#x2F;&#x2F;bohr.me&#x2F;" rel="noopener" target="_blank">波神</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2011 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Peigen Lee</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
